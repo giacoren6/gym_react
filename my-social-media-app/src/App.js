@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Comments from './components/Comments';
+import Followers from './components/Followers';
+import Likes from './components/Likes';
+import Posts from './components/Posts';
+import Profiles from './components/Profiles';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My Social Media App</h1>
+      <Comments />
+      <Followers />
+      <Likes />
+      <Posts />
+      <Profiles />
     </div>
   );
 }
